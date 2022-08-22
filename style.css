@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #EDF2F8;
+}
+
+.main-container{
+    height: fit-content;
+    align-items: center;
+    max-width: 600px;
+    min-width: 320px;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 1px 15px 25px rgb(202, 202, 202);
+    overflow: hidden;
+}
+
+.img-container{
+    height: 15rem;
+    overflow: hidden;
+}
+
+
+.img-style{
+    width: 100%;
+    translate: 0rem -10%;
+}
+
+.text-container{
+    min-width: 250px;
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+.primary-text{
+    font-family: manrope;
+    font-weight: 700;
+    font-size: medium;
+    margin-top: 1.5rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.sub-text{
+    font-family: manrope;
+    font-weight: 500;
+    font-size: small;
+    color: hsl(214, 17%, 51%);
+    margin-top: 2rem;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    max-height: 50px;
+    background-color: hsl(217, 19%, 35%);
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.avatar{
+    height: 50px;
+    border-radius: 50%;
+    margin-left: -5%;
+    display: none;
+}
+
+.name-container{
+    height: 60%;
+    margin-left: -9%;
+    margin-top: 2%;
+    display: none;
+}
+
+.name{
+    color: hsl(217, 19%, 35%);
+    font-size: small;
+    font-family: manrope;
+    margin: -1%;
+
+}
+
+.date{
+    color: hsl(214, 17%, 51%);
+    font-size: small;
+    font-family: manrope;
+    margin-top: -1%;
+}
+
+.arrow{
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-right: 3%;
+    background-color:hsl(210, 46%, 95%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.icon-facebook{
+    position: relative;
+
+    height: 1.4rem;
+}
+
+.icon-twitter{
+    height: 1.4rem;
+}
+
+.icon-pinterest{
+    height: 1.4rem;
+    margin-right: 10%;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.share{
+    margin-left: -3%;
+    font-family: manrope;
+    font-size:medium;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-wrapper{
+    margin-top: 3%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
