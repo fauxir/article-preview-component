@@ -59,43 +59,38 @@ body{
     justify-content: space-around;
     align-content: center;
     max-height: 50px;
-    background-color: hsl(217, 19%, 35%);
+    background-color: white;
     padding: 0.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .avatar{
     height: 50px;
     border-radius: 50%;
-    margin-left: -5%;
-    display: none;
 }
 
 .name-container{
-    height: 60%;
-    margin-left: -9%;
-    margin-top: 2%;
-    display: none;
+    height: 35px;
+    margin-left: -18%;
 }
 
 .name{
     color: hsl(217, 19%, 35%);
     font-size: small;
     font-family: manrope;
-    margin: -1%;
-
+    height: 1rem;
+    font-weight: 700;
 }
 
 .date{
+    height: 1rem;
     color: hsl(214, 17%, 51%);
     font-size: small;
     font-family: manrope;
-    margin-top: -1%;
 }
 
 .arrow{
     height: 0.8rem;
     width: 0.8rem;
-    margin-right: 3%;
     background-color:hsl(210, 46%, 95%);
     padding: 10px;
     border-radius: 50%;
@@ -104,35 +99,104 @@ body{
 
 .icon-facebook{
     position: relative;
-
+    display: none;
     height: 1.4rem;
 }
 
 .icon-twitter{
     height: 1.4rem;
+    display: none;
 }
 
 .icon-pinterest{
     height: 1.4rem;
     margin-right: 10%;
+    display: none;
 }
 
 .arrow:hover{
     cursor: pointer;
 }
 
-.share{
+.share-elem{
     margin-left: -3%;
+    margin-right: 3%;
     font-family: manrope;
     font-size:medium;
     color: hsl(212, 23%, 69%);
+    display: none;
 }
 
 .share-wrapper{
-    margin-top: 3%;
+    margin-bottom: 3%;
     margin-left: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 95%;
+    height: 50px;
+}
+
+@media (min-width: 800px) {
+    .main-container{
+        display: flex;
+        justify-content: center;
+        min-width: 48rem;
+        height: fit-content;
+        overflow: visible;
+    }
+
+    .img-container{
+        height: 18rem;
+        width: 20rem;
+        margin-left: -5rem;
+        object-fit: fill;
+    }
+
+    .img-style{
+        translate: 0rem 0%;
+        margin-left: 2rem;
+        height: 18rem;
+    }
+
+    .text-container{
+        position: absolute;
+        margin: 0rem;
+        margin-top: -5rem;
+        width: 28rem;
+    }
+
+    .bottom-container{
+        padding: 0rem;
+        margin-top: 10rem;
+        width: 30rem;
+    }
+
+    .text-and-share-wrapper{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        width: 25rem;
+        margin: 2rem;
+    }
+
+    .share-wrapper{
+        margin: 0;
+    }
+
+    .name-container{
+        margin-left: -12rem;
+    }
+
+    .arrow{
+        margin-right: -2.5rem;
+    }
+
+    .avatar{
+        margin-left: -0.5rem;
+    }
+
+    .sub-text{
+        margin-bottom: 2rem;
+    }
 }
